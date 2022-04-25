@@ -1,5 +1,14 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "test@gmail.com",
+      "pass": "test123"
+    },
+    {
+      "email": "test2@gmail.com",
+      "pass": "test1234"
+    }
+  ],
   "rooms": [
     {
       "id": 1,
@@ -86,4 +95,3 @@
     }
   ]
 }
- 

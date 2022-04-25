@@ -9,8 +9,8 @@ const navItems = [
     { name: 'Home', component: Home },
     { name: 'Rooms', component: RoomsList },
     { name: 'Treatments', component: TreatmentsList },
-    { name: 'Basket', component: Cart},
-    {name: 'Login', component: Login}
+    { name: 'Basket', component: Cart },
+    { name: 'Login', component: Login }
 ];
 
 export function Nav() {
