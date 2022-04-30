@@ -1,4 +1,3 @@
-
 const key = 'it-spa-cart';
 
 export const cartManager = {
