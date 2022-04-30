@@ -3,7 +3,7 @@ import { RoomsList } from "../views/RoomsList";
 import { Button } from "../common/Button";
 import { TreatmentsList } from "../views/TreatmentsList";
 import { Cart } from "../views/Cart";
-import { Login } from "../views/Login";
+import { LoginButton } from "../login/LoginButton";
 
 const navItems = [
   { name: "Home", component: Home },
@@ -36,17 +36,8 @@ export function Nav() {
     });
   });
 
-  const logButton = Button({
-    text: "Login",
-    classes: "btn log",
-    onClick: () => {
-      const customEvent = new CustomEvent("navigate", {
-        detail: Login,
-      });
+  const logButton = LoginButton();
 
-      document.body.dispatchEvent(customEvent);
-    },
-  });
   navButtons[0].classList.add("btn-active");
 
   nav.append(...navButtons, logButton);
