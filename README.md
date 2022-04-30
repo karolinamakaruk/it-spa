@@ -12,9 +12,9 @@ Aplikacja umożliwia:
 
 
 Aby przetestować funkcjonalność logowania, można skorzystać z tego adresu email i hasła:
-    imię: Jan
-    email: jan@gmail.com
-    hasło: jan123
+  - imię: Jan
+  - email: jan@gmail.com
+  - hasło: jan123
     
 Rejestracja nie jest jeszcze zaimplementowana.
 
