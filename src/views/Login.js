@@ -4,7 +4,6 @@ import { SubmitButton } from "../login/Submit";
 export function Login() {
   const logButtons = document.createElement("logButtons");
 
-
   logButtons.append(
     Button({
       text: "Login",
