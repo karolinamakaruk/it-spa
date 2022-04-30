@@ -12,8 +12,6 @@ const navItems = [
   { name: "Basket", component: Cart },
 ];
 
-let loginState = "Login";
-
 export function Nav() {
   const nav = document.createElement("nav");
   nav.classList.add("nav");
@@ -39,7 +37,7 @@ export function Nav() {
   });
 
   const logButton = Button({
-    text: loginState,
+    text: "Login",
     classes: "btn log",
     onClick: () => {
       const customEvent = new CustomEvent("navigate", {

@@ -1,12 +1,16 @@
+import { Home } from "../views/Home";
+
 export const loginCheck = {
   login() {
     event.preventDefault();
+
+    console.log(global.loginState); //
 
     const matchCredentials = (array, email, password) => {
       const match = array.find((el) => {
         return el.email === email && el.pass === password;
       });
-      return !!match;
+      return match;
     };
 
     const email = document.getElementById("se").value;
@@ -22,8 +26,20 @@ export const loginCheck = {
         return response.json();
       })
       .then((check) => {
-        if (!matchCredentials(check, email, password)) {
+        const match = matchCredentials(check, email, password);
+
+        if (!match) {
           window.alert("wrong email or password!");
+        } else {
+          const matchName = (global.matchName = match.name);
+          document.querySelector(
+            ".btn.log"
+          ).textContent = `Logout: ${matchName}`;
+          const customEvent = new CustomEvent("navigate", {
+            detail: Home,
+          });
+          window.alert(`Welcome ${matchName} `);
+          document.body.dispatchEvent(customEvent);
         }
       });
 
