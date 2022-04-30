@@ -15,7 +15,7 @@ export function RoomsListItem(room) {
     li.append(
         Button({
             text: 'Read More',
-            classes: 'btn btn-outline-secondary',
+            classes: 'btn btn-outline-secondary btn-light',
             onClick: () => {
                 const customEvent = new CustomEvent('navigate', {
                     detail: () => RoomDetails(room.id)
