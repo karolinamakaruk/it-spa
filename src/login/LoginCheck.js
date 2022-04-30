@@ -38,7 +38,7 @@ export const loginCheck = {
           const customEvent = new CustomEvent("navigate", {
             detail: Home,
           });
-          window.alert(`Welcome ${matchName} `);
+          window.alert(`Welcome: ${matchName} `);
           document.body.dispatchEvent(customEvent);
         }
       });

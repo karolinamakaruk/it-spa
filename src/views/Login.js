@@ -1,5 +1,5 @@
 import { Button } from "../common/Button";
-import { SubmitButton } from "../common/Submit";
+import { SubmitButton } from "../login/Submit";
 
 export function Login() {
   const logButtons = document.createElement("logButtons");
