@@ -11,7 +11,7 @@ Aplikacja umożliwia:
 - Podsumowanie składanego zamówienia
 
 
-Aby przetestować funkcjonalność logowania, można skorzystać z tego adresu email i hasła:
+Aby przetestować funkcjonalność logowania, można skorzystać z tego użytkownika:
   - imię: Jan
   - email: jan@gmail.com
   - hasło: jan123
