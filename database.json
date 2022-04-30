@@ -2,7 +2,8 @@
   "users": [
     { "name": "tester_a", "email": "a", "pass": "a" },
     { "name": "tester_1", "email": "test@gmail.com", "pass": "test123" },
-    { "name": "tester_2", "email": "test2@gmail.com", "pass": "test1234" }
+    { "name": "tester_2", "email": "test2@gmail.com", "pass": "test1234" },
+    { "name": "Jan", "email": "jan@gmail.com", "pass": "jan123" }
   ],
   "rooms": [
     {
