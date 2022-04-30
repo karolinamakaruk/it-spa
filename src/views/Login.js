@@ -8,14 +8,14 @@ export function Login() {
   logButtons.append(
     Button({
       text: "Login",
-      classes: "btn btn-light btn-outline-secondary col-1",
+      classes: "btn btn-light btn-outline-secondary btn-active",
     })
   );
 
   logButtons.append(
     Button({
       text: "Register",
-      classes: "btn btn-light btn-outline-secondary col-1",
+      classes: "btn btn-light btn-outline-secondary disabled",
     })
   );
 
