@@ -3,8 +3,8 @@ import { login, loginCheck} from '../login/LoginCheck';
 
 export function SubmitButton(item) {
   return Button({
-    text: "Submit",
-    classes: "btn btn-outline-secondary",
+    text: "Sign in",
+    classes: "btn btn-secondary col-2",
     onClick: () => {
           loginCheck.login();
     },

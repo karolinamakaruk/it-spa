@@ -1,8 +1,11 @@
 export function Home() {
   const section = document.createElement("section");
-  // const img = document.createElement("img");
-  // img.src = require("../assets/support.png");
-  // img.style.width = "50vw";
+  section.classList.add("home");
+  // const img = document.createElement('img');
+  // img.src = require('../assets/spa_img1.jpg')
+  // const imgTwo = document.createElement('imgTwo');
+  // imgTwo.src = require('../assets/spa_img2.jpg')
+  // imgTwo.style.width = '25vw'
 
   section.innerHTML = `
         <h3>WELCOME TO THE IT SPA</h3>
@@ -15,17 +18,7 @@ export function Home() {
         conversations to a whisper.</p>
     `;
 
-  // section.append(img);
-  section.style.backgroundColor = 'white';
-  section.style.marginTop='40rem';
-  section.style.width= '100vw';
-  section.style.opacity= '85%';
-  section.style.position= 'relative';
-  section.style.left= '50%';
-  section.style.right= '50%';
-  section.style.marginLeft= '-50vw';
-  section.style.marginRight= '-50vw';
-  
+    // section.append(img)
+
   return section;
 }
-
