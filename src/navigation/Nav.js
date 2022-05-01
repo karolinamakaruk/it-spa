@@ -36,7 +36,7 @@ export function Nav() {
     });
   });
 
-  const logButton = LoginButton();
+  const logButton = LoginButton("btn log");
 
   navButtons[0].classList.add("btn-active");
 

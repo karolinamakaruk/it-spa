@@ -1,15 +1,12 @@
 import { Button } from "../common/Button";
 import { SubmitButton } from "../login/Submit";
+import {LoginButton} from "../login/LoginButton"
 
 export function Login() {
   const logButtons = document.createElement("logButtons");
 
   logButtons.append(
-    Button({
-      text: "Login",
-      classes: "btn btn-light btn-outline-secondary btn-active",
-    })
-  );
+    LoginButton("btn btn-light btn-outline-secondary btn-active"));
 
   logButtons.append(
     Button({

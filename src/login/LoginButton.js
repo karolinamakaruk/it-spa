@@ -4,10 +4,10 @@ import { Button } from "../common/Button";
 global.user = undefined;
 let customEvent = "";
 
-export function LoginButton() {
+export function LoginButton(btnClass) {
   const logButton = Button({
     text: "Login",
-    classes: "btn log",
+    classes: btnClass,
     onClick: () => {
       if (!!user) {
         const confirm = window.confirm("Are you sure you want to logout?");

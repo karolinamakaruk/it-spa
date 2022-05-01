@@ -4,7 +4,7 @@ import { cartManager } from "../cart/cart-manager";
 export function AddToCartButton(item) {
   return Button({
     text: "Add To Cart",
-    classes: "btn btn-outline-secondary btn-light",
+    classes: "btn btn-outline-secondary btn-light fw-bold",
     onClick: () => {
       cartManager.addItem(item);
     },
