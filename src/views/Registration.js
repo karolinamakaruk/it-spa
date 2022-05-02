@@ -1,26 +1,31 @@
-import { SigninButton } from "../login/SubmitButtons";
+
+import { SignupButton } from "../login/SubmitButtons";
 import { LoginButton } from "../login/LoginButton";
 import { RegisterButton } from "../login/RegisterButton";
 
-export function Login() {
+export function Registration() {
   const logButtons = document.createElement("logButtons");
 
   logButtons.append(
-    LoginButton("btn btn-light btn-outline-secondary btn-active")
+    LoginButton("btn btn-light btn-outline-secondary")
   );
 
-  logButtons.append(RegisterButton());
+  logButtons.append(
+    RegisterButton()
+  );
 
   const logInput = document.createElement("logInput");
   logInput.innerHTML = `
-  <form id="tabs2">
-    <input id="se" type="email" placeholder="Email address" required/>
+  <form id="tabs">
+    <input id="se" type="text" placeholder="Name" required/>
+    <input id="se" type="email" placeholder="Email Address" required/>
     <input id="sp" type="password" placeholder="Password" required/>
+    <input id="sp" type="password" placeholder="Confirm Password" required/>
     </form>
     `;
 
   const submit = document.createElement("submit");
-  submit.append(SigninButton());
+  submit.append(SignupButton());
 
   const section = document.createElement("section");
   section.append(logButtons, logInput, submit);

@@ -90,6 +90,10 @@ input {
   margin-bottom: 0.1rem;
 }
 
+input:valid {
+  background-color: powderblue;
+}
+
 .roomDetails {
   background-color: white;
   margin-top: 5rem;
