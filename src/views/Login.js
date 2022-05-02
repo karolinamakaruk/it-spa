@@ -14,8 +14,8 @@ export function Login() {
   const logInput = document.createElement("logInput");
   logInput.innerHTML = `
   <form id="tabs2">
-    <input id="se" type="email" placeholder="Email address" required/>
-    <input id="sp" type="password" placeholder="Password" required/>
+    <input id="se" type="email" autocomplete="username" placeholder="Email address" required/>
+    <input id="sp" type="password" autocomplete="current-password" placeholder="Password" required/>
     </form>
     `;
 

@@ -17,6 +17,8 @@ export function SignupButton() {
   return Button({
     text: "Sign up",
     classes: "btn btn-secondary",
+    btnType: "submit",
+    btnForm: "tabs",
     onClick: () => {
       console.log("sign up");
     },

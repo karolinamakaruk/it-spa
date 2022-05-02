@@ -91,7 +91,12 @@ input {
 }
 
 input:valid {
-  background-color: powderblue;
+  background-color: rgb(214, 240, 243);
+}
+
+input:invalid {
+  border: 1px solid rgb(235, 142, 142);
+
 }
 
 .roomDetails {
