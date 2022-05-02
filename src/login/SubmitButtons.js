@@ -13,7 +13,7 @@ export function SigninButton() {
 }
 
 export function SignupButton() {
-  return Button({
+  const btnDisabled = Button({
     btnId: "btnSignUp",
     text: "Sign up",
     classes: "btn btn-secondary",
@@ -26,4 +26,6 @@ export function SignupButton() {
     //       user = await loginCheck();
     // }
   });
+  btnDisabled.disabled = true;
+  return btnDisabled;
 }

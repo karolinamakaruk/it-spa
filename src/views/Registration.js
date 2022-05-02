@@ -1,6 +1,8 @@
 import { SignupButton } from "../login/SubmitButtons";
 import { LoginButton } from "../login/LoginButton";
 import { RegisterButton } from "../login/RegisterButton";
+import { passCheck } from "../login/RegistrationCheck";
+import { test2 } from "../login/RegistrationCheckTest";
 
 export function Registration() {
   const logButtons = document.createElement("logButtons");
@@ -20,12 +22,13 @@ export function Registration() {
     `;
 
   const submit = document.createElement("submit");
-  submit.append(SignupButton());
 
+  submit.append(SignupButton());
   const section = document.createElement("section");
   section.append(logButtons, logInput, submit);
+
   section.style.marginTop = "1rem";
   section.style.padding = "3rem";
-
+  test2();
   return section;
 }
