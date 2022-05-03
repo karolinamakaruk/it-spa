@@ -17,8 +17,6 @@ export function SignupButton() {
     btnId: "btnSignUp",
     text: "Sign up",
     classes: "btn btn-secondary",
-    //btnType: "submit",
-    btnForm: "tabs",
     onClick: () => {
       console.log("tito");
     },
@@ -26,6 +24,7 @@ export function SignupButton() {
     //       user = await loginCheck();
     // }
   });
+  
   btnDisabled.disabled = true;
   return btnDisabled;
 }
