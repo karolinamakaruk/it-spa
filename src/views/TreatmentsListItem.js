@@ -11,7 +11,7 @@ export function TreatmentsListItem(treatment) {
         <h4>${treatment.name}</h4>
         <div> ${treatment.time} minutes</div>
         <div>
-            <strong>${treatment.price.toFixed(2)} PLN</strong>
+            <strong>€ ${treatment.price.toFixed(2)}</strong>
         </div>
     `;
 

@@ -13,7 +13,7 @@ export function Login() {
 
   const logInput = document.createElement("logInput");
   logInput.innerHTML = `
-  <form id="tabs2">
+  <form id="tabs">
     <input id="se" type="email" autocomplete="username" placeholder="Email address" required/>
     <input id="sp" type="password" autocomplete="current-password" placeholder="Password" required/>
     </form>

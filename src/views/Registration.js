@@ -29,7 +29,10 @@ export function Registration() {
   section.style.marginTop = "1rem";
   section.style.padding = "3rem";
 
-  formCheck();
+  var script = document.createElement("script");
+  script.type = "html";
+  script.src = formCheck(section);
+  section.appendChild(script);
 
   return section;
 }

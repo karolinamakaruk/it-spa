@@ -25,7 +25,7 @@ export function Cart() {
 
     tr.innerHTML = `
             <td>${item.name}</td>
-            <td>${item.price.toFixed(2)} PLN</td>
+            <td>€ ${item.price.toFixed(2)}</td>
             <td></td>
         `;
 
@@ -38,7 +38,7 @@ export function Cart() {
   tableFooter.innerHTML = `
         <td></td>
         <td>
-            <strong>${cartManager.getTotal().toFixed(2)} PLN</strong>
+            <strong>€ ${cartManager.getTotal().toFixed(2)}</strong>
         </td>
         <td></td>
     `;

@@ -1,24 +1,13 @@
-export function formCheck() {
-  window.addEventListener("keyup", function () {
-    const btnSignUp = document.getElementById("btnSignUp");
+export function formCheck(section) {
+  section.addEventListener("keyup", function () {
+    const btnSignUp = document.querySelector(`[id^="btnSign"]`);
 
     if (document.getElementById("tabs").checkValidity()) {
+      console.log(document.getElementById("tabs"));
       btnSignUp.disabled = false;
     } else {
       btnSignUp.disabled = true;
+      console.log(document.getElementById("tabs"));
     }
   });
 }
-
-// export function passCheck() {
-//   const sp = document.getElementById("sp").value;
-//   console.log(sp);
-//   const spc = document.getElementById("spc").value;
-//   console.log(spc);
-//   console.log(sp === spc);
-//   if (sp !== spc) {
-//     window.alert("passwords are not same");
-//   } else {
-//     console.log("jesteś w złym miejscu");
-//   }
-// }

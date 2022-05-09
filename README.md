@@ -1,24 +1,24 @@
-# PROJEKT IT SPA
+# PROJECT IT SPA
 
-Projekt zawiera aplikację Single Page Application dla ośrodka SPA dedykowanego programistom.
+The project includes a Single Page Application for a spa dedicated to developers.
 
-Aplikacja umożliwia:
+The application allows:
 
-- Przeglądanie dostępnych zabiegów
-- Dodawanie wybranych zabiegów do koszyka
-- Wybór daty przyjazdu i wyjazdu oraz pokoju
-- Logowanie użytkownika
-- Podsumowanie składanego zamówienia
+- Browsing available treatments
+- Adding selected treatments to the basket
+- Selecting arrival and departure date and room
+- User login
+- User registration
+- Summary of the order
 
 
-Aby przetestować funkcjonalność logowania, można skorzystać z tego użytkownika:
-  - imię: Jan
+To test the login functionality, you can use this user:
+  - name: Jan
   - email: jan@gmail.com
-  - hasło: jan123
+  - password: jan123
     
-Rejestracja nie jest jeszcze zaimplementowana.
 
-## Wykorzystane Technologie
+## Used Technologies
 
 - HTML, Bootstrap
 - CSS

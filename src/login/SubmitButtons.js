@@ -1,13 +1,14 @@
 import { Button } from "../common/Button";
 import { loginCheck } from "./LoginCheck";
+import { registrationAppend } from "./RegistrationAppend";
 
 export function SigninButton() {
   return Button({
+    btnId: "btnSignIn",
     text: "Sign in",
     classes: "btn btn-secondary",
     onClick: async () => {
       user = await loginCheck();
-      console.log("test2");
     },
   });
 }
@@ -18,7 +19,7 @@ export function SignupButton() {
     text: "Sign up",
     classes: "btn btn-secondary",
     onClick: () => {
-      console.log("tito");
+      registrationAppend();
     },
     // async () => {
     //       user = await loginCheck();
