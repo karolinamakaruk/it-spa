@@ -1,6 +1,6 @@
 import { Home } from "../views/Home";
 
-export async function loginCheck() {
+export function loginCheck() {
   event.preventDefault();
 
   const matchCredentials = (array, email, password) => {
@@ -13,7 +13,7 @@ export async function loginCheck() {
   const email = document.getElementById("se").value;
   const password = document.getElementById("sp").value;
 
-  const response = await fetch("http://localhost:3000/users")
+  const response = fetch("http://localhost:3000/users")
     .then((response) => {
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
@@ -32,7 +32,10 @@ export async function loginCheck() {
         const customEvent = new CustomEvent("navigate", {
           detail: Home,
         });
-        window.alert(`Welcome: ${matchName} `);
+        swal({
+          icon: "success",
+          text: `Welcome: ${matchName} `,
+        });
         document.body.dispatchEvent(customEvent);
         return matchName;
       }

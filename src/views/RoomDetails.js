@@ -36,7 +36,7 @@ export function RoomDetails(id) {
                 <p>${room.beds} x beds</p>
                 <p>${room.guests} x guests</p>
                 <p>
-                    <strong>${room.price.toFixed(2)} PLN</strong>
+                    <strong> € ${room.price.toFixed(2)} per night </strong>
                 </p>
             `;
 

@@ -8,14 +8,14 @@ export function RoomsListItem(room) {
     li.innerHTML = `
             <h4>${room.name}</h4>
             <div>
-                <strong> Price: ${room.price.toFixed(2)} PLN</strong>
+                <strong> Price: € ${room.price.toFixed(2)} per night</strong>
             </div>
         `;
 
     li.append(
         Button({
             text: 'Read More',
-            classes: 'btn btn-outline-secondary btn-light',
+            classes: 'btn btn-outline-secondary btn-light fw-bold me-2',
             onClick: () => {
                 const customEvent = new CustomEvent('navigate', {
                     detail: () => RoomDetails(room.id)

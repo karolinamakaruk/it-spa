@@ -12,7 +12,6 @@ export function TreatmentsList() {
         .then(response => response.json())
         .then(treatments => {
             const articles = treatments.map(treatment => TreatmentsListItem(treatment));
-            // const articles = treatments.map(TreatmentsListItem);
 
             section.querySelector('header').remove();
             section.append(...articles);

@@ -1,93 +1,113 @@
 {
   "users": [
-    { "name": "tester_a", "email": "a", "pass": "a" },
-    { "name": "tester_1", "email": "test@gmail.com", "pass": "test123" },
-    { "name": "tester_2", "email": "test2@gmail.com", "pass": "test1234" },
-    { "name": "Jan", "email": "jan@gmail.com", "pass": "jan123" }
+    {
+      "id": 1,
+      "name": "tester_a",
+      "email": "a",
+      "pass": "a"
+    },
+    {
+      "id": 2,
+      "name": "tester_1",
+      "email": "test@gmail.com",
+      "pass": "test123"
+    },
+    {
+      "id": 3,
+      "name": "tester_2",
+      "email": "test2@gmail.com",
+      "pass": "test1234"
+    },
+    {
+      "id": 4,
+      "name": "Jan",
+      "email": "jan@gmail.com",
+      "pass": "jan123"
+    }
   ],
   "rooms": [
     {
       "id": 1,
-      "name": "Pokój unarny",
+      "name": "Deluxe King Room",
       "beds": 1,
       "guests": 1,
-      "price": 170,
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "price": 110,
+      "description": "This bright room have large windows overlooking the forest. They feature a flat-screen TV, ironing facilities, and a minibar. and tea/coffee making facilities. Slippers, a bathrobe and free toiletries are provided. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
     },
     {
       "id": 2,
-      "name": "Pokój binarny",
+      "name": "Twin Deluxe Room",
       "beds": 1,
       "guests": 2,
-      "price": 240,
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "price": 140,
+      "description": "This bright room have large windows overlooking the forest. They feature a flat-screen TV, ironing facilities, and a minibar. and tea/coffee making facilities. Slippers, a bathrobe and free toiletries are provided. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
     },
     {
       "id": 3,
-      "name": "Pokój trójkowy",
+      "name": "Twin Executive Room",
       "beds": 2,
       "guests": 3,
-      "price": 290,
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "price": 190,
+      "description": "This bright room have large windows overlooking the forest. They feature a flat-screen TV, ironing facilities, and a minibar. and tea/coffee making facilities. Slippers, a bathrobe and free toiletries are provided. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
     },
     {
       "id": 4,
-      "name": "Pokój czwórkowy",
+      "name": "Family Connecting Room",
       "beds": 2,
       "guests": 4,
-      "price": 340,
-      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+      "price": 240,
+      "description": "This bright room have large windows overlooking the forest. They feature a flat-screen TV, ironing facilities, and a minibar. and tea/coffee making facilities. Slippers, a bathrobe and free toiletries are provided. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
     }
   ],
   "treatments": [
     {
       "id": 1,
-      "name": "Masaż rozgrzanym monitorem",
-      "area": "back",
+      "name": "Beer Bath Hydrotherapy",
+      "area": "body",
       "time": 30,
-      "price": 80
+      "price": 60
     },
     {
       "id": 2,
-      "name": "Biczowanie kablem od myszy",
-      "area": "back",
+      "name": "Body Mud Mask",
+      "area": "body",
       "time": 20,
       "price": 70
     },
     {
       "id": 3,
-      "name": "Peeling odłamkami płyty CD",
-      "area": "face",
+      "name": "Infrared Sauna",
+      "area": "body",
       "time": 15,
       "price": 50
     },
     {
       "id": 4,
-      "name": "Pedicure woskiem z USB",
-      "area": "legs",
+      "name": "Hot Stone Massage",
+      "area": "body",
       "time": 25,
       "price": 100
     },
     {
       "id": 5,
-      "name": "Manicure analogowo-cyfrowy",
-      "area": "hands",
+      "name": "Aromatherapy Massage",
+      "area": "body",
       "time": 45,
-      "price": 150
+      "price": 50
     },
     {
       "id": 6,
-      "name": "Kąpiel w gorącej kawie",
-      "area": "body",
+      "name": "Oxygen Facial",
+      "area": "face",
       "time": 60,
-      "price": 200
+      "price": 100
     },
     {
       "id": 7,
-      "name": "Depilacja dyskiem twardym",
-      "area": "body",
+      "name": "LED Facial",
+      "area": "face",
       "time": 45,
-      "price": 120
+      "price": 80
     }
   ]
 }

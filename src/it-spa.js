@@ -3,6 +3,7 @@ import "./it-spa.scss";
 import { Home } from "./views/Home";
 import { RoomsList } from "./views/RoomsList";
 import { Nav } from "./navigation/Nav";
+import swal from 'sweetalert';
 
 const main = document.querySelector("main");
 
