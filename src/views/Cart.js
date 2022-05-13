@@ -1,4 +1,4 @@
-import { cartManager } from "../cart/cart-manager";
+import { cartManager } from "../cart/CartManager";
 import { RemoveFromCartButton } from "../common/RemoveFromCartButton";
 
 export function Cart() {

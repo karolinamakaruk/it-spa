@@ -1,5 +1,5 @@
 import { RoomsListItem } from "./RoomsListItem";
-import { datapicker } from "../common/select_date";
+import { datapicker } from "../common/SelectDate";
 
 export function RoomsList() {
   const section = document.createElement("section");

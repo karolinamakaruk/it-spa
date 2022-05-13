@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import { cartManager } from "../cart/cart-manager";
+import { cartManager } from "../cart/CartManager";
 import { Cart } from "../views/Cart";
 
 export function RemoveFromCartButton(item) {

@@ -1,16 +1,4 @@
-import { src } from "../common/import_src";
-
-//src("https://cdn.jsdelivr.net/jquery/latest/jquery.min.js")
 export function datapicker() {
-  //   src("https://cdn.jsdelivr.net/momentjs/latest/moment.min.js");
-  //   src("https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js");
-  //   var st = document.createElement("style");
-  //   st.rel = "stylesheet";
-  //   st.href = "https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css";
-
-  //   document.getElementsByTagName("head")[0].appendChild(st);
-
-  //const datapicker = document.createElement("datapicker");
 
   const datapicker = document.createElement("input");
   datapicker.type = "text";
