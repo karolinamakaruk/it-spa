@@ -15,7 +15,7 @@ export function datapicker() {
   const datapicker = document.createElement("input");
   datapicker.type = "text";
   datapicker.name = "daterange";
- 
+
   datapicker.classList.add("datapicker");
 
   let tomorrow = new Date();
@@ -25,7 +25,9 @@ export function datapicker() {
   let nextYear = new Date();
   nextYear.setDate(tomorrow.getDate() + 365);
 
-  global.numberDays = undefined;
+  global.numberDays = 7;
+  global.startDay = tomorrow.toISOString().split("T")[0];
+  global.endDay = nextWeek.toISOString().split("T")[0];
 
   jQuery(function () {
     jQuery('input[name="daterange"]').daterangepicker(
@@ -44,13 +46,8 @@ export function datapicker() {
           60 /
           60 /
           24;
-        console.log(numberDays);
-        console.log(
-          "A new date selection was made: " +
-            start.format("YYYY-MM-DD") +
-            " to " +
-            end.format("YYYY-MM-DD")
-        );
+        startDay = start.format("YYYY-MM-DD");
+        endDay = end.format("YYYY-MM-DD");
       }
     );
   });

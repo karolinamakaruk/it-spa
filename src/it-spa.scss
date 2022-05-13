@@ -3,7 +3,6 @@
 body {
   background-image: url(assets/home.jpg);
   background-color: white;
-  // opacity: 83%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,7 +22,6 @@ body {
 .home {
   top: 50rem;
   background-color: white;
-  // opacity: 83%;
   width: 100vw;
   position: absolute;
   left: 50%;
@@ -100,7 +98,6 @@ input:valid {
 
 input:invalid {
   border: 1px solid rgb(235, 142, 142);
-
 }
 
 .roomDetails {
