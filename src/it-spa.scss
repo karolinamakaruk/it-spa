@@ -21,8 +21,9 @@ body {
 }
 
 .home {
+  top: 50rem;
   background-color: white;
-  opacity: 83%;
+  // opacity: 83%;
   width: 100vw;
   position: absolute;
   left: 50%;
@@ -32,6 +33,7 @@ body {
   bottom: 0;
   text-align: center;
   margin-bottom: 2rem;
+  padding-bottom: 60rem;
 }
 
 main {
@@ -70,6 +72,7 @@ li {
   position: fixed;
   bottom: 0;
   color: white;
+  z-index: -10;
 }
 
 .welcome {
@@ -118,4 +121,15 @@ input:invalid {
   position: absolute;
   right: 30px;
   font-weight: bold;
+}
+
+.photos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  height: 500px;
+}
+
+.datapicker {
+  width: 200px;
 }

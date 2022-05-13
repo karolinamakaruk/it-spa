@@ -1,4 +1,3 @@
-import swal from "sweetalert";
 export function registrationAppend() {
   console.log("Start");
 
@@ -41,8 +40,6 @@ export function registrationAppend() {
         return response.json();
       })
       .then((machedUsers) => {
-        // console.log(machedUsers);
-        // console.log(machedUsers.length);
         if (machedUsers.length === 0) {
           postUser();
         } else {

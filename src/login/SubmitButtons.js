@@ -21,11 +21,8 @@ export function SignupButton() {
     onClick: () => {
       registrationAppend();
     },
-    // async () => {
-    //       user = await loginCheck();
-    // }
   });
-  
+
   btnDisabled.disabled = true;
   return btnDisabled;
 }

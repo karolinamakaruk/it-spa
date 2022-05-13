@@ -36,7 +36,6 @@ export function loginCheck() {
           icon: "success",
           text: `Welcome: ${matchName} `,
         });
-        // window.alert(`Welcome: ${matchName} `);
         document.body.dispatchEvent(customEvent);
         return matchName;
       }

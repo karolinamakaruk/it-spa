@@ -8,7 +8,7 @@ export function RoomsListItem(room) {
     li.innerHTML = `
             <h4>${room.name}</h4>
             <div>
-                <strong> Price: € ${room.price.toFixed(2)}</strong>
+                <strong> Price: € ${room.price.toFixed(2)} per night</strong>
             </div>
         `;
 

@@ -10,16 +10,8 @@ export function LoginButton(btnClass) {
     classes: btnClass,
     onClick: () => {
       if (!!user) {
-        const confirm = swal({
-          icon: "warning",
-          text: "Are you sure you want to logout?",
-          buttons: {
-            cancel: false,
-            confirm: true,
-          },
-        });
-        
-        //window.confirm("Are you sure you want to logout?");
+        const confirm = window.confirm("Are you sure you want to logout?");
+        console.log(confirm);
         if (confirm) {
           customEvent = new CustomEvent("navigate", {
             detail: Login,

@@ -7,7 +7,7 @@ export function Cart() {
 
   section.innerHTML = `
         <h2>Cart</h2>
-        <p>Oto zawartość Twojego koszyka.</p>
+        <p>Here are the items of your cart</p>
     `;
 
   const table = document.createElement("table");
@@ -16,7 +16,7 @@ export function Cart() {
   const tableHead = document.createElement("tr");
   tableHead.innerHTML = `
         <th>Name</th>
-        <th>Price</th>
+        <th>Total Price</th>
         <th></th>
     `;
 
