@@ -1,6 +1,6 @@
-export function registrationAppend() {
-  console.log("Start");
+import { welcomeUser } from "../common/WelcomeUser";
 
+export function registrationAppend() {
   //   variables created from the form data located in the Registration.js
   const fName = document.getElementById("sn").value;
   const fEmail = document.getElementById("se").value;
@@ -8,10 +8,7 @@ export function registrationAppend() {
   const fPasswordConfirm = document.getElementById("spc").value;
   const userData = { name: fName, email: fEmail, pass: fPassword };
 
-  console.log("Form");
-  //
   function postUser() {
-    console.log("post_user");
     fetch("http://localhost:3000/users", {
       method: "POST", //sending data to the server
       headers: {
@@ -31,7 +28,6 @@ export function registrationAppend() {
   }
 
   if (fPassword === fPasswordConfirm) {
-    console.log("correct password");
     fetch(`http://localhost:3000/users?email=${fEmail}&_limit=1`)
       .then((response) => {
         if (!response.ok) {
@@ -42,6 +38,8 @@ export function registrationAppend() {
       .then((machedUsers) => {
         if (machedUsers.length === 0) {
           postUser();
+          welcomeUser(fName);
+          
         } else {
           swal({
             icon: "warning",

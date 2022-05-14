@@ -1,4 +1,4 @@
-import { Home } from "../views/Home";
+import { welcomeUser } from "../common/WelcomeUser";
 
 export function loginCheck() {
   event.preventDefault();
@@ -27,17 +27,7 @@ export function loginCheck() {
         window.alert("wrong email or password!");
       } else {
         const matchName = match.name;
-
-        document.querySelector(".btn.log").textContent = `Logout: ${matchName}`;
-        const customEvent = new CustomEvent("navigate", {
-          detail: Home,
-        });
-        swal({
-          icon: "success",
-          text: `Welcome: ${matchName} `,
-        });
-        document.body.dispatchEvent(customEvent);
-        return matchName;
+        welcomeUser(matchName);
       }
     });
   return response;

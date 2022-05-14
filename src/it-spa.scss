@@ -20,18 +20,20 @@ body {
 }
 
 .home {
-  top: 50rem;
-  background-color: white;
+  top: 80%;
   width: 100vw;
   position: absolute;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  bottom: 0;
   text-align: center;
+}
+
+.background {
+  background-color: white;
+  padding-bottom: 2rem;
   margin-bottom: 2rem;
-  padding-bottom: 60rem;
 }
 
 main {
@@ -129,4 +131,21 @@ input:invalid {
 
 .datapicker {
   width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  .photos {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 10rem;
+    padding-bottom: 10rem;
+  }
 }

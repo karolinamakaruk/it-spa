@@ -23,6 +23,12 @@
       "name": "Jan",
       "email": "jan@gmail.com",
       "pass": "jan123"
+    },
+    {
+      "name": "Gosia",
+      "email": "gosia@op.pl",
+      "pass": "6UdjEBydnbqrT8C",
+      "id": 5
     }
   ],
   "rooms": [
