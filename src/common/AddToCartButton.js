@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import { cartManager } from "../cart/cart-manager";
+import { cartManager } from "../cart/CartManager";
 
 export function AddToCartButton(item) {
   return Button({
